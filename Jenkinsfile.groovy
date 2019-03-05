@@ -1,6 +1,12 @@
 pipeline {
 	agent any
 	stages {
+		stage("安装依赖") {
+			steps {
+				echo "安装依赖"
+				sh "npm install"
+			}
+		}
 		stage("代码扫描") {
 			steps {
 				echo "代码扫描"
