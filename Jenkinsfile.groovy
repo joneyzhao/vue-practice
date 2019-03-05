@@ -5,7 +5,7 @@ pipeline {
 		stage('代码扫描') {
 			steps {
 				echo "代码扫描"
-				npm run lint
+				sh "npm run lint"
 			}
 		}
 		stage('单元测试') {
