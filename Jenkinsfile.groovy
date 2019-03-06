@@ -28,6 +28,7 @@ pipeline {
 		stage("部署") {
 			steps {
 				echo "部署"
+				echo "pwd"
 			}
 		}
 	}
